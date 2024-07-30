@@ -2,7 +2,7 @@
 
     <!-- Sidebar Toggle (Topbar) -->
     <button id="sidebarToggleTop" class="btn-link d-md-none border-0" style="background-color: #a06cd5;">
-        <i class="fa-solid fa-compass fa-lg"></i>
+        <i class="fa-solid fa-compass fa-lg text-light"></i>
     </button>
 
     <!-- Topbar Search -->
