@@ -32,7 +32,7 @@
 
                         <!-- Page Heading 3 -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <label class="card p-2 pl-4 pr-4 rounded-pill" style="background-color: #7209b7; border: none;"><h1 class="h3 mb-0 text-light fw-semibold">Dashboard</h1></label>
+                            <label class="card p-2 pl-4 pr-4 rounded-pill" style="background-color: #7209b7; border: none;"><h1 class="h3 mb-0 text-light text-center fw-semibold">Dashboard</h1></label>
                         </div>
 
                         <div class="col-xl-8 col-lg-13">
@@ -62,7 +62,7 @@
 
                     <!-- Page Heading 5 -->
                     <div class="d-sm-flex align-items-center justify-content-between mt-4 mb-4">
-                        <label class="card p-2 pl-4 pr-4 rounded-pill" style="background-color: #7209b7; border: none;"><h1 class="h3 mb-0 text-light fw-semibold">About</h1></label>
+                        <label class="card p-2 pl-4 pr-4 rounded-pill" style="background-color: #7209b7; border: none;"><h1 class="h3 mb-0 text-light text-center fw-semibold">About</h1></label>
                     </div>
 
                     <!-- Content Row -->
