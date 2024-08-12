@@ -59,7 +59,7 @@
                 
             ?>
             <audio class="audio-player" style="width: 80%;" controls>
-				<source id="audio-src" src="audio/<?= $rowMp3['audio_path']; ?>" type="audio/mpeg">
+				<source id="audio-src" src="https://feliciahard.github.io/comix-src/audios/<?= $rowMp3['audio_path']; ?>" type="audio/mpeg">
 			</audio>
             <?php //} ?>
 

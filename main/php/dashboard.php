@@ -18,6 +18,9 @@
     require_once 'date/date.php';
     require_once 'date/count-num-week.php';
     require_once 'date/yearDropdown.php';
+    require_once 'logout/logout.php';
+    require_once 'logout/to_logout.php';
+    require_once 'logout/logout-verify.php';
 
     $idImg = 5;
 

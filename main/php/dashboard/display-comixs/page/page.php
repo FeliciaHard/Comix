@@ -9,7 +9,7 @@
     $page_dir = " ";
 
     //  Connects with php/logout/to_logout.php
-    $num_of_dir_logout = 1;
+    $num_of_dir_logout = 4;
     
     require_once '../../../config.php';
     require_once '../../../imports.php';
@@ -18,6 +18,9 @@
     require_once '../../../date/date.php';
     require_once '../../../date/count-num-week.php';
     require_once '../../../date/yearDropdown.php';
+    require_once '../../../logout/logout.php';
+    require_once '../../../logout/to_logout.php';
+    require_once '../../../logout/logout-verify.php';
 
     $idImg = 2;
 

@@ -2,10 +2,9 @@
 
     //  Database Section
 
-    $server = 'localhost';
-
     try {
         //  Set mysql credentials
+        $server = '';
         $dbname = '';
         $usrnme = '';
         $pass = '';
@@ -47,6 +46,7 @@
             '; */
 
             //  Default mysql credentials
+            $server = 'localhost';
             $dbname = 'comix';
             $usrnme = 'root';
             $pass = '';

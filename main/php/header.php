@@ -1,4 +1,5 @@
 <?php
+
     // IMPORTANT don't remove
     require_once 'imports.php';
     require_once 'images.php';
@@ -13,6 +14,21 @@
     $row = mysqli_num_rows($result);
 
     $row = mysqli_fetch_assoc($result);
+?>
+
+<?php
+
+    require_once 'log.php';
+    
+    //  This function will check whether the user is logged in or not
+    if (isset($_SESSION)) {
+        if (isLoggedIn()) {
+            
+            // echo "<a href='logout/logout.php?out' class='btn btn-danger' id='logout'>Logout</a>";
+
+        }
+    }
+
 ?>
 
 <style>
