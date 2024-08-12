@@ -69,7 +69,7 @@
 
         <div class="row row-cols-2 row-cols-md-6 g-4" style="max-height: 1000px; overflow-y: auto;">
             <?php foreach($page_data as $rowId) { ?>
-            <div class="col">
+            <div class="col" id="grid-adjt">
                 <div class="card border border-dark rounded-4">
                     <a href="<?= $rowId['page']; ?>" data-lightbox="mygallery">
                     <img src="<?= $rowId['page']; ?>" class="card-img-top rounded-4" alt="...">
