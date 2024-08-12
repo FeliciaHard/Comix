@@ -21,3 +21,9 @@ Interface was build using the languages below :
 
 # Demo Page
 Link : [Comix](http://comix.infinityfreeapp.com/)
+
+<img src="https://feliciahard.github.io/comix-src/images/login.jpeg" width="auto" />
+
+<img src="https://feliciahard.github.io/comix-src/images/dashboard.jpeg" width="auto" />
+
+<img src="https://feliciahard.github.io/comix-src/images/pages.jpeg" width="auto" />
