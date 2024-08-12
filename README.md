@@ -12,7 +12,9 @@ Interface was build using the languages below :
 
 # Setup Steps
 
-1. Install xampp
-2. Pull project to htdocs folder
-3. Run Apache & MySQL server on xampp's control panel
-4. Serves the browser for [localhost](http://localhost/)
+1. Install xampp.
+2. Pull project to htdocs folder.
+3. Go inside sql folder and use Winrar to combine extract parts of the sql file.
+4. Run Apache & MySQL server on xampp's control panel.
+5. Next open PhpMyAdmin and import the sql file [localhost](http://localhost/phpmyadmin/).
+6. Serves the browser for [localhost](http://localhost/).
