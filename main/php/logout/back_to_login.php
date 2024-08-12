@@ -1,69 +1,42 @@
 <?php
 
-    function back_to_login($num_dir) {
+function back_to_login($num_dir) {
+    // Define the login file
+    $file_name = 'login.php';
 
-        $file_name = 'login.php';
+    // Calculate directory level
+    $dir = $num_dir;
 
-        /** 
-         * Make it easier to use the array
-         * -    It's starts with 1 instead of 0
-         */ 
+    // List of different back directories
+    $bck_dir = array(
+        "./",
+        "../",
+        "../../",
+        "../../../",
+        "../../../../",
+        "../../../../../",
+    );
 
-        $dir = (($num_dir + 2) - 1);
+    // Determine the protocol (HTTP/HTTPS)
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https://' : 'http://';
 
-        /** 
-         * List of different back directories
-         */
+    // Construct the base URL
+    $base_url = $protocol . $_SERVER['HTTP_HOST'];
 
-        $bck_dir = array(
-            /* 0 */    "./",
-            /* 1 */    "../",
-            /* 2 */    "../../",
-            /* 3 */    "../../../",
-            /* 4 */    "../../../../",
-            /* 5 */    "../../../../../",
-        );
-
-        //  Redirect the choosen directory
-
-            //  If the website is secure
-        if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-            $uri = 'https://';
-            $back_to_main = header("Location: https://comix.infinityfreeapp.com/Comic/main/login.php?not-allowed");
-        }
-        
-            //  Or else the website is local
-        else {
-            $uri = 'http://';
-        }
-
-        //  To declare the variable = http://localhost
-        $local = ($uri .= $_SERVER['HTTP_HOST']);
-
-            //  If using xampp or other local web servers
-        if ($local == 'http://localhost') {
-            $back_to_main = header("Location: http://localhost/Comic/main/login.php?not-allowed");
-
-            exit;
-        }
-
-            //  If using php web servers exstension
-        elseif ($local == 'http://localhost:3000') {
-            $back_to_main = header("Location: http://localhost/Comic/main/login.php?not-allowed");
-
-            exit;
-        }
-
-            //  Other general local web servers
-        else {
-            //header('Location: main/index.php');
-
-            exit;
-        }
-        
-        //  Output assign the directory
-        echo $back_to_main;
-
+    // Handle redirection based on environment
+    if ($base_url === 'http://localhost') {
+        header("Location: {$base_url}/Comic/main/login.php?not-allowed");
+    } elseif ($base_url === 'http://localhost:3000') {
+        header("Location: {$base_url}/Comic/main/login.php?not-allowed");
+    } elseif ($protocol === 'https://') {
+        header("Location: https://comix.infinityfreeapp.com/Comic/main/login.php?not-allowed");
+    } else {
+        // Handle other general local web servers or production environments
+        // For example, redirect to a default or relative path
+        header("Location: /main/index.php");
     }
 
+    // Terminate the script after redirection
+    exit;
+}
 ?>
