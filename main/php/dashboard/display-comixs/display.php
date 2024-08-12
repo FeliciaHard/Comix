@@ -92,7 +92,7 @@
         
         <div class="row row-cols-2 row-cols-md-6 g-4" style="max-height: 1000px; overflow-y: auto;">
             <?php foreach($page_data as $rowId) { ?>
-                <div class="col">
+                <div class="col" id="grid-adjt">
                     <div class="card border border-dark rounded-4">
                         <?php //echo '<a href="#" data-bs-toggle="modal" data-bs-target="#disCom'.$rowId["id_comix"].'">'; ?>
                         <a href="dashboard/display-comixs/page/page.php?idCom=<?= $rowId['id_comix']; ?>">
