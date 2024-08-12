@@ -15,21 +15,21 @@
 
 	    //  If using xampp or other local web servers
     if ($local == 'http://localhost') {
-	    header('Location: php/dashboard.php');
+	    header('Location: login.php');
 
 	    exit;
     }
 
         //  If using php web servers exstension
     elseif ($local == 'http://localhost:3000') {
-	    header('Location: php/dashboard.php');
+	    header('Location: login.php');
 
 	    exit;
     }
 
         //  Other general local web servers
     else {
-        header('Location: php/dashboard.php');
+        header('Location: login.php');
 
         exit;
     }
