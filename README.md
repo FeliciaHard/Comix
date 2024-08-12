@@ -15,7 +15,7 @@ Interface was build using the languages below :
 1. Install xampp.
 2. Pull project to htdocs folder.
 3. Go inside sql folder and use Winrar to combine extract parts of the sql file.
-4. Run Apache & MySQL server on xampp's control panel.
+4. Run Apache & MySQL server on xampp's Control Panel.
 5. Next open PhpMyAdmin and import the sql file [phpmyadmin](http://localhost/phpmyadmin/).
 6. Serves the browser for [localhost](http://localhost/).
 
