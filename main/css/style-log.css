@@ -90,6 +90,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://feliciahard.github.io/comix-src/images/type3.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: 1850px;
