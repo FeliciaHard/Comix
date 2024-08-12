@@ -1,5 +1,5 @@
 # Comix
-Read High-Res Comics with pre-build user interface and easy to use user experiences
+Read High-Res Comics with pre-build user interface and easy to use user experiences.
 
 # Notes
 Interface was build using the languages below :
