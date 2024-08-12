@@ -72,7 +72,7 @@ if ($filter1 === "") {
                 if (mysqli_num_rows($result_filter) > 0) {
                     while ($row_filter = mysqli_fetch_assoc($result_filter)) {
                         $output = '
-                            <div class="col">
+                            <div class="col" id="grid-adjt">
                                 <div class="card border border-dark rounded-4">
                                     <a href="dashboard/display-comixs/page/page.php?idCom='.$row_filter['id_comix'].'">
                                     <img src="'.$row_filter['dis_comix'].'" class="card-img-top rounded-4" alt="...">
