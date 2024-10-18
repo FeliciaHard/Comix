@@ -3,15 +3,16 @@
     $idpage = $id;
 
     $sqlPage = "
-        SELECT tbl_page.num_page, tbl_page.page, tbl_page.id_page, tbl_comix.tol_page
-        FROM tbl_page
-        INNER JOIN tbl_comix ON tbl_page.id_page = tbl_comix.id_page
-        WHERE tbl_comix.id_comix = '$id';
+        SELECT *
+        FROM tbl_comix
+        WHERE id_comix = '$id';
     ;";
 
     $resultPage = mysqli_query($connect, $sqlPage);
 
-    $rowPage = mysqli_num_rows($resultPage);
+    $rowPage = mysqli_fetch_assoc($resultPage);
+
+    $nameFolder = $rowPage['name_comix'];
 
     $page_data = [];
 
@@ -59,7 +60,8 @@
                 
             ?>
             <audio class="audio-player" style="width: 80%;" controls>
-				<source id="audio-src" src="https://feliciahard.github.io/comix-src/audios/<?= $rowMp3['audio_path']; ?>" type="audio/mpeg">
+                <source id="audio-src" src="https://feliciahard.github.io/comix-src/audios/<?= $rowMp3['audio_path']; ?>" type="audio/mpeg">
+				<!-- <source id="audio-src" src="audio/<?= $rowMp3['audio_path']; ?>" type="audio/mpeg"> -->
 			</audio>
             <?php //} ?>
 
@@ -67,23 +69,24 @@
         </nav>
         <?php } ?>
 
-        <div class="row row-cols-2 row-cols-md-6 g-4" style="max-height: 1000px; overflow-y: auto;">
-            <?php foreach($page_data as $rowId) { ?>
-            <div class="col" id="grid-adjt">
-                <div class="card border border-dark rounded-4">
-                    <a href="<?= $rowId['page']; ?>" data-lightbox="mygallery">
-                    <img src="<?= $rowId['page']; ?>" class="card-img-top rounded-4" alt="...">
-                    <!-- <div class="card-body">
-                        <h6 class="card-title">Card title</h5>
-                        <p class="card-text"></p>
-                    </div> -->
-                    </a>
-                </div>
-
-                <!-- <script src="../js/filter/filter-in-tbl-dep.js"></script> -->
-            </div>
-            <?php } ?>
+        <div class="row row-cols-2 row-cols-md-6 g-4" style="max-height: 1000px; overflow-y: auto;" id="image-gallery">
+            <?php 
+                include_once "comix_content/seeMe.php"; 
+                $tempName = strval($nameFolder);
+                appear('comix_content/'.$tempName);
+            ?>
+            <!-- <a href="" data-lightbox="mygallery"> -->
+            <!-- <img src="" class="card-img-top rounded-4" alt="..."> -->
+            <!-- <div class="card-body">
+                <h6 class="card-title">Card title</h5>
+                <p class="card-text"></p>
+            </div> -->
+            <!-- </a> -->
         </div>
 
     </div>
 </div>
+
+<link rel="stylesheet" href="../../../../css/viewer.editor.css?v=<?php echo time();?>">
+
+<script src="../../../../js/viewer.run.js"></script>

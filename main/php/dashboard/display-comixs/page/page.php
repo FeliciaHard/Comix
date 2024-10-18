@@ -67,7 +67,8 @@
     <link rel="stylesheet" href="<?php conn_other_css2($num_of_dir); ?>">
     <link rel="stylesheet" href="<?php conn_fontawesome_css($num_of_dir); ?>">
     <link rel="stylesheet" href="<?php conn_btm_nav_css($num_of_dir); ?>">
-    <link rel="stylesheet" href="../../../../css/lightbox.min.css?v=<?php echo time();?>">
+    <!-- <link rel="stylesheet" href="../../../../css/lightbox.min.css?v=<?php //echo time();?>"> -->
+    <link rel="stylesheet" href="../../../../css/viewer.min.css?v=<?php echo time();?>">
     <?php importCDN_css(); importCDN_font(); importCDN_headerICON2(); ?>
     <link rel="shortcut icon" href="<?php icon_site(); ?>" type="image/x-icon">
     <title><?= $rowPage['name_comix'].$title; ?></title>
@@ -87,4 +88,5 @@
 </body>
 <script src="../../../../js/to_dashboard.js"></script>
 <script src="../../../../js/lightbox-plus-jquery.min.js"></script>
+<script src="../../../../js/viewer.min.js"></script>
 </html>
