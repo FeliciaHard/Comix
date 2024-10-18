@@ -29,6 +29,21 @@
             </div>
         </div>
 
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSrclink" aria-expanded="true" aria-controls="collapseSrclink">
+            <i class="fa-solid fa-link"></i>
+            <span>Source Links</span>
+        </a>
+        <div id="collapseSrclink" class="collapse" aria-labelledby="headingSrclink" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded-4">
+                <a class="collapse-item" href="https://drive.google.com/drive/folders/1TgMkfgF5Mxg5Hk2Sj17b2qFPWdCjbPru" target="_blank" aria-expanded="false">
+                    TS-GD
+                </a>
+                <a class="collapse-item" href="https://gedecomix.com/comics-artist/tracy-scops/" target="_blank" aria-expanded="false">
+                    GedeComix
+                </a>
+            </div>
+        </div>
+
         <!-- <a class="nav-link collapsed" href="#status">
             <i class="fa-solid fa-square-poll-vertical"></i>
             <span>Status</span>
@@ -42,8 +57,20 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
+        <style>
+            #github:hover {
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+        <a href="https://github.com/FeliciaHard/Comix" target="_blank" style="color: inherit;">
+            <i class="fa-brands fa-2xl fa-github" id="github"></i>
+        </a>
+    </div>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline mt-5">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 
