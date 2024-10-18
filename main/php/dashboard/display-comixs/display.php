@@ -104,7 +104,7 @@
                         </a>
                     </div>
                         
-                        <?php include_once 'load-once.php'; //  copy paste it to here ?>
+                        <?php //    include_once 'load-once.php'; //  copy paste it to here ?>
                 </div>
             <?php } ?>
         </div>
