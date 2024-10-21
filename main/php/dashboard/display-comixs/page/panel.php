@@ -46,6 +46,14 @@
 
                     </div>
 
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-12 col-lg-13">
+                            <?php include_once 'cover.php'; ?>
+                        </div>
+
+                    </div>
+
                     <!-- <div class="row">
 
                         <div class="col-lg-8 mb-4">
