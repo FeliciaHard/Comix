@@ -18,13 +18,16 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSendlink" aria-expanded="true" aria-controls="collapseSendlink">
-            <i class="fa-solid fa-paper-plane"></i>
+            <i class="fa-solid fa-gear"></i>
             <span>Advanced</span>
         </a>
         <div id="collapseSendlink" class="collapse" aria-labelledby="headingSendlink" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded-4">
                 <a class="collapse-item" href="#" data-bs-toggle="modal" data-bs-target="#newCom" aria-expanded="false">
                     Add Comix
+                </a>
+                <a class="collapse-item" href="#" data-bs-toggle="modal" data-bs-target="#editCom" aria-expanded="false">
+                    Edit Comix
                 </a>
             </div>
         </div>
@@ -44,13 +47,46 @@
             </div>
         </div>
 
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseExtlink" aria-expanded="true" aria-controls="collapseExtlink">
+            <i class="fa-solid fa-file-prescription"></i>
+            <span>Extras</span>
+        </a>
+        <div id="collapseExtlink" class="collapse" aria-labelledby="headingExtlink" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded-4">
+                <a class="collapse-item" href="https://coomer.su/" target="_blank" aria-expanded="false">
+                    Coomer.su
+                </a>
+
+                <hr class="sidebar-divider">
+
+                <a class="collapse-item" href="https://hobby.porn/model/diana-daniels/" target="_blank" aria-expanded="false">
+                    Diana-Daniels
+                </a>
+                <a class="collapse-item" href="https://coomer.su/fansly/user/285775042912989184" target="_blank" aria-expanded="false">
+                    Fansly - Coomer
+                </a>
+
+                <hr class="sidebar-divider">
+
+                <a class="collapse-item" href="https://hobby.porn/model/mini-diva/" target="_blank" aria-expanded="false">
+                    Mini-Diva
+                </a>
+                <a class="collapse-item" href="https://coomer.su/onlyfans/user/minidivaonly" target="_blank" aria-expanded="false">
+                    OnlyFans - Coomer
+                </a>
+            </div>
+        </div>
+
         <!-- <a class="nav-link collapsed" href="#status">
             <i class="fa-solid fa-square-poll-vertical"></i>
             <span>Status</span>
         </a> -->
 
         <div>
-            <?php include_once 'comixs/add-comix.php' ?>
+            <?php 
+                include_once 'comixs/add-comix.php';
+                include_once 'comixs/edit-comix.php';
+            ?>
         </div>
     </li>
 

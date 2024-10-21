@@ -20,10 +20,16 @@
             <!-- Main Content -->
             <!-- <div id="content" style="background-color: #e7c6ff;"> -->
             <div id="content" style="background-color: #e7c6ff; background-image: url('<?php echo $image; ?>'); background-size: 40%; background-attachment: fixed; width: 100%; height: 100vh; overflow-x: hidden; overflow-y: scroll;">
+            <!-- <div id="content" style="background-color: #e7c6ff; background-size: 40%; background-attachment: fixed; width: 100%; height: 100vh; overflow-x: hidden; overflow-y: scroll;"> -->
+
 
                 <!-- Topbar -->
                 <?php include_once 'topbar.php'; ?>
                 <!-- End of Topbar -->
+
+                <div class="pop-ups">
+                    <?php require_once 'pop-ups/pop-ups.php'; ?>
+                </div>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -51,11 +57,11 @@
                     <!-- <div class="row">
 
                         <div class="col-lg-8 mb-4">
-                            <?php include_once ''; ?>
+                            <?php //include_once ''; ?>
                         </div>
   
                         <div class="col-xl-4 col-lg-5">
-                            <?php include_once ''; ?>
+                            <?php //include_once ''; ?>
                         </div>
 
                     </div> -->
