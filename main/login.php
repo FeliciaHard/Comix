@@ -14,6 +14,13 @@
     require_once 'php/logout/logout.php'; 
     require_once 'php/images.php';
 
+    session_start(); // Start session at the top!
+
+    if (isset($_SESSION['temp'])) {
+        $tempUsr = $_SESSION['temp'];
+
+        if ($tempUsr == "Tmp_Usr") {
+
 ?>
 
 <!DOCTYPE html>
@@ -108,3 +115,14 @@
     <script src="js/security/log-validation.js"></script>
     <?php importCDN_js();?>
 </html>
+
+<?php
+
+        }
+    } 
+    
+    else {
+        header("Location: ../auth.php?NOT-ALLOWED");
+    }
+
+?>
