@@ -38,6 +38,9 @@
         </a>
         <div id="collapseSrclink" class="collapse" aria-labelledby="headingSrclink" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded-4">
+                <a class="collapse-item" href="https://kemono.su/patreon/user/313614" target="_blank" aria-expanded="false">
+                    Kemono.su
+                </a>
                 <a class="collapse-item" href="https://drive.google.com/drive/folders/1TgMkfgF5Mxg5Hk2Sj17b2qFPWdCjbPru" target="_blank" aria-expanded="false">
                     TS-GD
                 </a>
