@@ -15,21 +15,23 @@
 
 	    //  If using xampp or other local web servers
     if ($local == 'http://localhost') {
-	    header('Location: main/index.php');
+	    //header('Location: main/index.php');
 
 	    exit;
     }
 
         //  If using php web servers exstension
     elseif ($local == 'http://localhost:3000') {
-	    header('Location: main/index.php');
+	    //header('Location: main/index.php');
+        header('Location: auth.php');
 
 	    exit;
     }
 
         //  Other general local web servers
     else {
-        header('Location: main/index.php');
+        //header('Location: main/index.php');
+        header('Location: auth.php');
 
         exit;
     }
