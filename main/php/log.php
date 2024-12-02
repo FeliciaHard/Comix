@@ -39,7 +39,8 @@
                 session_start();
                 $_SESSION['user'] = $_POST['user'];
 
-                header("Location: dashboard.php?welcome&key=".$encrypt_user);
+                //header("Location: dashboard.php?welcome&key=".$encrypt_user);     // DON'T REMOVE
+                header('Location: dashboard/display-comixs/page/page.php?idCom=1');
 
                 // if ($pass === 'INPUT PASSWORD') {
                 //     session_start();
