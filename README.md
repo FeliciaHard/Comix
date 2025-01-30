@@ -18,6 +18,8 @@ Interface was build using the languages below :
 4. Run Apache & MySQL server on xampp's Control Panel.
 5. Next open PhpMyAdmin and import the sql file [phpmyadmin](http://localhost/phpmyadmin/).
 6. Serves the browser for [localhost](http://localhost/).
+7. Download comix comics from [MEGA Archived](https://mega.nz/folder/mQw0WCSJ).
+8. Extract and move the folder to main/php/dashboard/display-comixs/page/comix_content
 
 # Demo Page
 Link : [Comix](http://comix.infinityfreeapp.com/)
